@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h2 {
+  font-size: 36px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-primary {
+  background-color: #feba49;
+  border: 1px solid #feba49;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  transition: all 0.5;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+.btn-outline-primary {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px 20px;
+  border-radius: 10px;
+  transition: all 0.5;
+}
+
+.btn-outline-primary:hover {
+  background-color: #feba49;
+  border: 1px solid #feba49;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: linear-gradient(180deg, #FA5800 8.58%, #FEBA2B 108.58%);
+  padding: 10px 26px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.btn-secondary:hover {
+  color: #000;
+  background: transparent;
+  border: 1px solid #feba49;
+
+}
+
+/* Header Start */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ffffff 0%, #fdfeff 51.56%, #fedea3 100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header .logo {
+  width: 90px;
+  object-fit: cover;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  font-weight: 500;
+}
+
+/* #navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #feba49;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+} */
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+/* End */
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .col {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer strong {
+  padding: 20px 0px;
+  line-height: 28px;
+}
+.footer-company {
+  
+  font-weight: 600;
+}
+
+footer form {
+  width: 75%;
+
+}
+footer form input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 14px;
+  margin: 12px 0px;
+}
+footer form input::placeholder {
+  padding-left: 16px;
+}
+footer .btn-submit {
+  width: 100%;
+  text-align: right;
+}
+.footer-des {
+  display: flex;
+  align-items: start;
+}
+
+
+footer p {
+  font-size: 15px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer i {
+  border-radius: 50%;
+  background: linear-gradient(#FF9544, #FAA436, #F3B723, #EFC219, #EEC615);
+  padding: 7px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 8px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+footer .copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+footer .copyright img {
+  width: 130px;
+}
+footer .copyright .w-30 {
+  width: 30%;
+}
+footer .copyright .w-70 {
+  width: 70%;
+}
+
+footer hr {
+  height: 2px;
+  width: 100%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* End */
+
+/* Start Media Query */
+
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 80px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  .button-group {
+    display: none;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+ 
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+  #header {
+    padding: 10px 30px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  #hero {
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  #feature {
+    justify-content: space-between;
+  }
+  #feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+  #product1 .pro {
+    width: 100%;
+  }
+  #banner {
+    height: 40vh;
+  }
+  #sm-banner .banner-box {
+    height: 40vh;
+  }
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 0 20px;
+  }
+  #banner3 .banner-box {
+    width: 100%;
+  }
+  #newsletter {
+    padding: 40px 20px;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
+  footer .copyright {
+    text-align: start;
+  }
+}
+
+/* End */
